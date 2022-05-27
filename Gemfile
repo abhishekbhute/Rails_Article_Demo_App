@@ -23,7 +23,7 @@ gem 'jquery-ui-rails'
 
 gem 'bootstrap'
 
-
+gem 'will_paginate', '~> 3.3'
 
 gem "bootstrap_form", "~> 5.0"
 # Use CoffeeScript for .coffee assets and views
