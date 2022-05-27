@@ -1,5 +1,6 @@
 {
   "name": "rails_app",
   "private": true,
-  "dependencies": {}
+  "dependencies": {},
+  "stack": "heroku-18"
 }
