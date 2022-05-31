@@ -9,6 +9,7 @@ class SessionsController < ApplicationController
             session[:user_id] = user.id
             flash[:notice] = "Logged in successfully"
             redirect_to user
+            WelcomeMailer.with(session[:user_id]).welcome_email.deliver_later
         else
             flash.now[:alert] = "There was something wrong with your login details"
             render 'new'

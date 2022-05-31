@@ -7,6 +7,9 @@
           <% if @article.user%>
             by <%= link_to @article.user.username, user_path(@article.user)%>
                 <%= link_to image_tag("profile.png", :alt => "rss feed", class:"rounded mx-auto d-block profile p-2"), user_path(@article.user) %>
+                <% if @article.categories.any?%>
+                  <%= render @article.categories%>
+                <%end%>
             <%end%>
         </div>
         <div class="card-body">

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body class="container">
+    <p>Welcome <%= @user.username %>!</p>
+    </p>
+    <h1 class="text-center mt-4">WELCOME TO ALPHA BLOGS</h1>
+    <p>Name: <%= @user.username %></p>
+    <p>Account Created on <%= time_ago_in_words(@user.created_at) %></p>
+    <p>
+    Message:<br>
+    ----------
+    </p>
+    <%# <p><%= @order.message %></p> 
+    <a class="btn btn-success" href="https://www.google.co.in/" target="_blank" >CLICK HERE</a>
+  </body>
+</html>
